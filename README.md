@@ -1,5 +1,3 @@
 # Project-1---Board-Game
 
-this is my first project read me.
-
-commit test2
+![Word Challenge Game](https://tinyurl.com/yf49uedz)
