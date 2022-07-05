@@ -1,6 +1,6 @@
 # Word Challenge Game
 
-![Word Challenge Game](https://tinyurl.com/yf49uedz)
+![Word Challenge Game](https://tinyurl.com/2pthw4zs)
 
 ---
 
