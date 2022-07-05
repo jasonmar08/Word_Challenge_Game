@@ -40,7 +40,7 @@ Once the player starts the game, a hint will propagate in the form of either a q
 - [x] ~~Add random word generator~~
 - [ ] Add score tracker
 - [ ] Add a winner animation
-- [ ] Call an axios API to expan word library
+- [ ] Call an axios API to expand word library
 
 ---
 
