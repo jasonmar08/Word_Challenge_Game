@@ -46,13 +46,5 @@ Once the player starts the game, a hint will propagate in the form of either a q
 
 ## **_Credits_**
 
-<<<<<<< HEAD
-**Game Backgrounds: [freepik.com](https://tinyurl.com/wyc5taba) | [123rf.com](https://tinyurl.com/y3nzffyn)**
-
-**Schoolbell Font: [fonts.google.com](https://tinyurl.com/2p8kasss)**
-
-**Technologies: [developerpitstop.com](https://tinyurl.com/5n66xbjh)**
-=======
 **Game Backgrounds: [freepik.com](https://tinyurl.com/wyc5taba) [123rf.com](https://tinyurl.com/y3nzffyn)**
 **Schoolbell Font: [fonts.google.com](https://tinyurl.com/2p8kasss)**
->>>>>>> 32e54cf (final draft readme)
