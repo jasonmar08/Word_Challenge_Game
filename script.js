@@ -26,10 +26,6 @@ let triesLeft = document.querySelector('.tries-left')
 //   return words.map((words) => words.length)
 // }
 
-// const newInput = document.createElement('input')
-// newInput.type = 'text'
-// newInput.maxLength = '1'
-
 // const wordsLength = words.map((word) => {
 //   return word.length
 // })
@@ -53,25 +49,4 @@ resetButton.addEventListener('click', () => {
   resetButton.innerText = 'New Word'
   question.innerText = `${questionGenerated}`
   triesLeft.innerText = `${wordLength - 1}`
-  // inputBoxes.append(newInput)
-
-  // for (let i = 0; i < wordGenerated.length; i++) {
-  //   if (inputField !== wordGenerated[i]) {
-  //     input = ''
-  //   } else {
-  //     input = input
-  //   }
-  // }
 })
-
-inputField.addEventListener('input', () {
-  for (let i = 0; i < wordLength; i++) {
-    i += 1
-    if (inputField[i] !== wordGenerated[i]) {
-      inputField = ''
-    } else {
-      inputField[i] = inputField[i]
-    }
-  }
-})
-

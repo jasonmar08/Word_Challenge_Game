@@ -31,7 +31,7 @@ input {
   color: white;
   border-radius: 50%;
   text-transform: uppercase;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 section {
@@ -79,4 +79,17 @@ button {
 .tries-left, .incorrect-letters {
   font-weight: bold;
   color: white;
+}
+
+.alphabet {
+  display: flex;
+  flex-direction: column;
+  flex-flow: space-between;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  margin: 0 0 0 150px;
+  flex-wrap: wrap;
+  font-size: 20px;
+  
 }
