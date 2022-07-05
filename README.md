@@ -1,7 +1,5 @@
 ![Word Challenge Game](https://tinyurl.com/2pthw4zs)
 
----
-
 ## Date: 7/4/2022
 
 ### By: Jason Martinez
