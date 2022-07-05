@@ -2,6 +2,7 @@
 
 ![Word Challenge Game](https://tinyurl.com/yf49uedz)
 
+---
 
 ## Date: 7/4/2022
 
@@ -36,3 +37,16 @@ Once the player starts the game, a hint will propagate in the form of either a q
 ---
 
 ## **_Future Updates_**
+
+- [x] ~~Create a "Start Game" button~~
+- [x] ~~Add random word generator~~
+- [ ] Add score tracker
+- [ ] Add a winner animation
+- [ ] Call an axios API to expan word library
+
+---
+
+## **_Credits_**
+
+**Game Backgrounds: [freepik.com](https://tinyurl.com/wyc5taba) [123rf.com](https://tinyurl.com/y3nzffyn)**
+**Schoolbell Font: [fonts.google.com](https://tinyurl.com/2p8kasss)**
