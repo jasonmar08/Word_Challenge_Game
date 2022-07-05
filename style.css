@@ -76,15 +76,7 @@ button {
   border-radius: 45%;
 }
 
-.letter-buttons {
-  display: flex;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  display: inline;
-  border-radius: 0%;
-  font-size: 10px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.tries-left, .incorrect-letters {
+  font-weight: bold;
+  color: white;
 }
