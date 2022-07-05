@@ -2,7 +2,7 @@
 
 ![Word Challenge Game](https://tinyurl.com/yf49uedz)
 
-## Date: 2/14/2020
+## Date: 7/4/2022
 
 ### By: Jason Martinez
 
