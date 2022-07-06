@@ -16,11 +16,11 @@ const words = [
   { word: 'complain', question: 'Another word for whining' },
   { word: 'voice', question: 'The strongest tool a human has to communicate' }
 ]
-const inputField = document.querySelector('input')
 const resetButton = document.querySelector('button')
 const inputBoxes = document.querySelector('.game-input')
 const question = document.querySelector('.question')
 let triesLeft = document.querySelector('.tries-left')
+let letters = document.querySelector('.letter')
 
 // function wordLengths(...strings) {
 //   return words.map((words) => words.length)
@@ -49,4 +49,21 @@ resetButton.addEventListener('click', () => {
   resetButton.innerText = 'New Word'
   question.innerText = `${questionGenerated}`
   triesLeft.innerText = `${wordLength - 1}`
+})
+
+letters.addEventListener('click', () => {
+  if (
+    letters.innerText === 'A' ||
+    'B' ||
+    'C' ||
+    'D' ||
+    'E' ||
+    'F' ||
+    'G' ||
+    'H' ||
+    'I' ||
+    'J'
+  ) {
+    console.log(letters.innerText)
+  }
 })
