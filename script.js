@@ -1,46 +1,136 @@
+//
+// GLOBAL VARIABLES //
 const words = [
-  { word: 'method', question: 'What is another word for function?' },
-  { word: 'course', question: 'Not fine, but ...?' },
-  { word: 'europe', question: 'Where do we live?' },
-  { word: 'frozen', question: "Who taught us to 'let it go'" },
-  { word: 'bananas', question: 'What word did Gwen Stefani teach us to spell' },
-  { word: 'weapon', question: 'What is used in battle' },
-  { word: 'remedy', question: 'Another word for cure of an illness' },
-  { word: 'immune', question: 'Immune system' },
-  { word: 'sunday', question: 'First day of the week' },
+  { word: 'method', clue: 'What is another word for function?' },
+  { word: 'course', clue: 'Not fine, but ...?' },
+  { word: 'europe', clue: 'Where do we live?' },
+  { word: 'frozen', clue: "Who taught the world to 'let it go'" },
+  { word: 'weapon', clue: 'What is used in battle' },
+  { word: 'remedy', clue: 'Another word for cure of an illness' },
+  { word: 'immune', clue: 'Immune system' },
+  { word: 'sunday', clue: 'First day of the week' },
   {
     word: 'america',
-    question: 'Who celebrates their independce every 4th of July?'
+    clue: 'Who celebrates their independce every 4th of July?'
   },
-  { word: 'sunshine', question: 'Florida is the _____ state' },
-  { word: 'complain', question: 'Another word for whining' },
-  { word: 'voice', question: 'The strongest tool a human has to communicate' }
+  { word: 'sunshine', clue: 'Florida is the _____ state' },
+  { word: 'complain', clue: 'Another word for whining' },
+  { word: 'voice', clue: 'The strongest tool a human has to communicate' }
+]
+let alphabetList = [
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z'
 ]
 const resetButton = document.querySelector('button')
 const inputBoxes = document.querySelector('.game-input')
 const question = document.querySelector('.question')
-let triesLeft = document.querySelector('.tries-left')
 let letters = document.querySelector('.letter')
+let alphabetDiv = document.querySelector('#alphabet-buttons')
+let triesSection = document.querySelector('.tries-left')
+let wrngLetters = document.querySelector('.incorrect-letters')
+let triesLeft
+let correctGuesses
+let wrongGuesses
+let inputAmount
+let wordGenerated
 
-// function wordLengths(...strings) {
-//   return words.map((words) => words.length)
-// }
+//
+//
+// CHECK GUESSED LETTERS WITH HIDDEN WORD,
+// DECREMENT TRIES LEFT,
+// UPDATE EMPTY SLOT INNERTEXT WITH CORRECT LETTER GUESSED //
 
-// const wordsLength = words.map((word) => {
-//   return word.length
-// })
+const checkGuess = (letter) => {
+  if (triesLeft > 0 && correctGuesses.indexOf(letter) === -1) {
+    let found = false
+    for (let i = 0; i < wordGenerated.length; i++) {
+      if (letter.toLowerCase() == wordGenerated[i]) {
+        found = true
+        correctGuesses.push(letter)
+        document.querySelector(`span[index="${i}"]`).innerText = letter + ' '
+
+        if (correctGuesses.length === wordGenerated.length) {
+          question.innerText = `Winner! You guessed ${wordGenerated.toUpperCase()} correctly!`
+        }
+      }
+    }
+
+    if (found === false) {
+      if (wrongGuesses.indexOf(letter) === -1) {
+        wrongGuesses.push(letter)
+        wrngLetters.innerText = wrongGuesses
+      }
+      triesSection.innerHTML = --triesLeft
+      if (triesLeft == 0) {
+        question.innerText = 'Darn! You lose this round! Try a new word.'
+      }
+    }
+  }
+}
+
+//
+//
+// CREATE ALPHABET BUTTONS FOR SELECTION //
+
+for (let i = 0; i < alphabetList.length; i++) {
+  let addAlphabet = document.createElement('li')
+  addAlphabet.innerHTML = `<button class="letter-button">${alphabetList[i]}</button>`
+  addAlphabet.addEventListener('click', (evt) => {
+    checkGuess(evt.target.innerText)
+  })
+
+  alphabetDiv.appendChild(addAlphabet)
+}
+
+//
+//
+// GENERATE RANDOM WORD AND RESPECTIVE SPAN AMOUNT,
+// RESET GAME FUNCTIONS/VALUES FOR EVERY NEW RANDOM WORD //
+//
 
 resetButton.addEventListener('click', () => {
-  let randomWords = words[Math.floor(Math.random() * words.length)]
-  let wordGenerated = randomWords.word
-  let wordLength = wordGenerated.length
-  let questionGenerated = randomWords.question
+  triesLeft = 6
+  correctGuesses = []
+  wrongGuesses = []
+  inputAmount = ''
+  wordGenerated = ''
+  wrngLetters.innerText = ''
 
-  let inputAmount = ''
+  let randomWords = words[Math.floor(Math.random() * words.length)]
+  wordGenerated = randomWords.word
+  let wordLength = wordGenerated.length
+  let questionGenerated = randomWords.clue
+
   for (let i = 0; i < wordLength; i++) {
-    inputAmount += `<input type="text" maxlength="1">`
+    inputAmount += `<span index=${i}>_ </span>`
   }
+
   inputBoxes.innerHTML = inputAmount
+  inputAmount = ''
 
   console.log(wordGenerated)
   console.log(wordLength)
@@ -48,22 +138,5 @@ resetButton.addEventListener('click', () => {
 
   resetButton.innerText = 'New Word'
   question.innerText = `${questionGenerated}`
-  triesLeft.innerText = `${wordLength - 1}`
-})
-
-letters.addEventListener('click', () => {
-  if (
-    letters.innerText === 'A' ||
-    'B' ||
-    'C' ||
-    'D' ||
-    'E' ||
-    'F' ||
-    'G' ||
-    'H' ||
-    'I' ||
-    'J'
-  ) {
-    console.log(letters.innerText)
-  }
+  triesSection.innerHTML = triesLeft
 })

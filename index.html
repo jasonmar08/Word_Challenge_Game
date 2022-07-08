@@ -10,20 +10,20 @@
   <title>Word Challenge Game</title>
 </head>
 <body>
-  <header><h1>Word Challenge<!--Hidden Words--></h1></header>
+  <header><h1>Word Challenge</h1></header>
   <section>
-    <div class="alphabet">
-      <div class="letter">A</div> <div class="letter">B</div> <div class="letter">C</div> <div class="letter">D</div> <div class="letter">E</div> <div class="letter">F</div> <div class="letter">G</div> <div class="letter">H</div> <div class="letter">I</div> <div class="letter">J</div> <div class="letter">K</div> <div class="letter">L</div> <div class="letter">M</div> <div class="letter">N</div> <div class="letter">O</div> <div class="letter">P</div> <div class="letter">Q</div> <div class="letter">R</div> <div class="letter">S</div> <div class="letter">T</div> <div class="letter">U</div> <div class="letter">V</div> <div class="letter">W</div> <div class="letter">X</div> <div class="letter">Y</div> <div class="letter">Z</div>
+    <div class="alphabet-div">
+      <ul id="alphabet-buttons"></ul>
     </div>
     <div class="game-input">
     </div>
     <div class="game-content">
-      <h3 class="question">Answer the question to guess the hidden word!<!--Can you guess the hidden word?--></h3>
-      <p>Number of tries left: <span class="tries-left"></span></p>
+      <h3 class="question">Can you guess the hidden word?</h3>
+      <p>Number of tries left:  <span class="tries-left"></span></p>
       <p>Incorrect letters: <span class="incorrect-letters"></span></p>
       <br>
     </div>
-    <button>Start Game</button>
+    <button id="start-next">Start Game</button>
   </section>
 </body>
 </html>
