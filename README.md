@@ -1,4 +1,4 @@
-![Word Challenge Game](https://tinyurl.com/2pthw4zs)
+![Word Challenge Game](https://tinyurl.com/4e85sbww)
 
 ## Date: 7/4/2022
 
