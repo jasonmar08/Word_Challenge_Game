@@ -1,5 +1,6 @@
 //
 // GLOBAL VARIABLES //
+//
 const words = [
   { word: 'method', clue: 'Another word for function' },
   {
@@ -62,11 +63,10 @@ let inputAmount
 let wordGenerated
 
 //
-//
 // CHECK GUESSED LETTERS WITH HIDDEN WORD,
 // DECREMENT TRIES LEFT,
 // UPDATE EMPTY SLOT INNERTEXT WITH CORRECT LETTER GUESSED //
-
+//
 const checkGuess = (letter) => {
   if (triesLeft > 0 && correctGuesses.indexOf(letter) === -1) {
     let found = false
@@ -96,9 +96,8 @@ const checkGuess = (letter) => {
 }
 
 //
-//
 // CREATE ALPHABET BUTTONS FOR SELECTION //
-
+//
 for (let i = 0; i < alphabetList.length; i++) {
   let addAlphabet = document.createElement('li')
   addAlphabet.innerHTML = `<button class="letter-button">${alphabetList[i]}</button>`
@@ -110,11 +109,9 @@ for (let i = 0; i < alphabetList.length; i++) {
 }
 
 //
-//
 // GENERATE RANDOM WORD AND RESPECTIVE SPAN AMOUNT,
 // RESET GAME FUNCTIONS/VALUES FOR EVERY NEW RANDOM WORD //
 //
-
 resetButton.addEventListener('click', () => {
   triesLeft = 6
   correctGuesses = []
@@ -134,10 +131,6 @@ resetButton.addEventListener('click', () => {
 
   inputBoxes.innerHTML = inputAmount
   inputAmount = ''
-
-  console.log(wordGenerated)
-  console.log(wordLength)
-  console.log(questionGenerated)
 
   resetButton.innerText = 'New Word'
   question.innerText = `${questionGenerated}`
