@@ -1,4 +1,4 @@
-![Word Challenge Game](https://tinyurl.com/4e85sbww)
+![Word Challenge Game](images/banner.png)
 
 ## Date: 7/4/2022
 
@@ -30,7 +30,7 @@ Once the player starts the game, a clue will propagate in the form of either a q
 
 ## **_Screenshots_**
 
-![Game Image](https://tinyurl.com/2p89u6xy)
+![Game Image](images/gameboard.png)
 
 ---
 
