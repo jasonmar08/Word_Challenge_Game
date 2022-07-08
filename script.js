@@ -9,7 +9,7 @@ const words = [
   { word: 'dessert', clue: 'Best meal of the day' },
   { word: 'frozen', clue: "Who taught the world to 'let it go'" },
   { word: 'weapon', clue: 'What is used in battle' },
-  { word: 'remedy', clue: 'Used to treat a disease of injury' },
+  { word: 'remedy', clue: 'Used to treat a disease or injury' },
   { word: 'immune', clue: 'Resistant to a disease' },
   { word: 'sunday', clue: 'It is the funday of the week' },
   {
@@ -17,7 +17,7 @@ const words = [
     clue: '4th of July is their day'
   },
   { word: 'sunshine', clue: 'Florida is the _____ state' },
-  { word: 'complain', clue: 'this act helps you express your annoyance' },
+  { word: 'complain', clue: 'This act helps you express your annoyance' },
   { word: 'voice', clue: 'The strongest tool a human has to communicate' }
 ]
 let alphabetList = [

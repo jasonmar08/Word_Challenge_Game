@@ -28,7 +28,7 @@ Once the player starts the game, a hint will propagate in the form of either a q
 
 ## **_Screenshots_**
 
-![Game Image](https://tinyurl.com/3e98964k)
+![Game Image](https://tinyurl.com/2p89u6xy)
 
 ---
 
