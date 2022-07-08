@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+a{
+  text-decoration: none;
+}
 header {
   margin: 50px;
   font-family: "Schoolbell", 'Courier New', Courier, monospace;
@@ -82,6 +84,22 @@ p {
   border-radius: 45%;
 }
 
+#go-to-game {
+  margin: 0 auto;
+  padding: 5px;
+  height: 35px;
+  width: 120px;
+  background-color:rgb(196, 163, 124);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 15%;
+}
+
+#go-to-game a {
+  color: rgb(87, 69, 23);
+}
+
 .tries-left, .incorrect-letters {
   font-weight: bold;
   color: white;
@@ -120,3 +138,4 @@ li {
   text-align: center;
   cursor: pointer;
 }
+

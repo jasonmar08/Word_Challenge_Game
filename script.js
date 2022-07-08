@@ -1,20 +1,23 @@
 //
 // GLOBAL VARIABLES //
 const words = [
-  { word: 'method', clue: 'What is another word for function?' },
-  { word: 'course', clue: 'Not fine, but ...?' },
-  { word: 'europe', clue: 'Where do we live?' },
+  { word: 'method', clue: 'Another word for function' },
+  {
+    word: 'bananas',
+    clue: 'A hollaback girl taught the world how to spell this'
+  },
+  { word: 'dessert', clue: 'Best meal of the day' },
   { word: 'frozen', clue: "Who taught the world to 'let it go'" },
   { word: 'weapon', clue: 'What is used in battle' },
-  { word: 'remedy', clue: 'Another word for cure of an illness' },
-  { word: 'immune', clue: 'Immune system' },
-  { word: 'sunday', clue: 'First day of the week' },
+  { word: 'remedy', clue: 'Used to treat a disease of injury' },
+  { word: 'immune', clue: 'Resistant to a disease' },
+  { word: 'sunday', clue: 'It is the funday of the week' },
   {
     word: 'america',
-    clue: 'Who celebrates their independce every 4th of July?'
+    clue: '4th of July is their day'
   },
   { word: 'sunshine', clue: 'Florida is the _____ state' },
-  { word: 'complain', clue: 'Another word for whining' },
+  { word: 'complain', clue: 'this act helps you express your annoyance' },
   { word: 'voice', clue: 'The strongest tool a human has to communicate' }
 ]
 let alphabetList = [
