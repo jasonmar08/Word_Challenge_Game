@@ -10,7 +10,7 @@
 
 ## **_Description_**
 
-A word that tests your knowledge.
+A word game that tests your trivia knowledge.
 
 Can you solve the clues and guess the hidden word? [Play Now!](https://word-challenge-game.surge.sh)
 
@@ -24,7 +24,7 @@ Can you solve the clues and guess the hidden word? [Play Now!](https://word-chal
 
 ## **_Getting Started_**
 
-Once the player starts the game, a hint will propagate in the form of either a question or statement. The challenge is to determine the hidden word and type the guessed letters into the input fields. The player must guess wisely as there are limited chances for guessing letters before they lose this round. When ready to move on to a new word, the player may simply click the "New Word" button and a new word with its hint will be generated.
+Once the player starts the game, a clue will propagate in the form of either a question or statement. The challenge is to determine the hidden word and type the guessed letters into the input fields. The player must guess wisely as there are limited chances for guessing letters before they lose their round. When ready to move on to a new word, the player may simply click the "New Word" button and a new word with its hint will be generated.
 
 ---
 
@@ -38,6 +38,7 @@ Once the player starts the game, a hint will propagate in the form of either a q
 
 - [x] ~~Create a "Start Game" button~~
 - [x] ~~Add random word generator~~
+- [ ] Add option to select different categories of words
 - [ ] Add score tracker
 - [ ] Add a winner animation
 - [ ] Call an axios API to expand word library
