@@ -10,7 +10,7 @@
 
 ## **_Description_**
 
-A word game that tests your trivia knowledge.
+A word game built in a week that tests your trivia knowledge.
 
 Can you solve the clues and guess the hidden word? [Play Now!](https://word-challenge-game.surge.sh)
 
