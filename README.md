@@ -4,7 +4,7 @@
 
 ### By: Jason Martinez
 
-### [GitHub](https://github.com/jasonmar08) | [LinkedIn](linkedin.com/in/jason-martinez-a79ba7aa)
+### [GitHub](https://github.com/jasonmar08) | [LinkedIn](https://linkedin.com/in/jason-martinez-a79ba7aa)
 
 ---
 
@@ -40,7 +40,7 @@ Once the player starts the game, a clue will propagate in the form of either a q
 - [x] ~~Add random word generator~~
 - [ ] Add option to select different categories of words
 - [ ] Add score tracker
-- [ ] Add a winner animation
+- [ ] Add a winner pop-up animation
 - [ ] Call an axios API to expand word library
 
 ---
