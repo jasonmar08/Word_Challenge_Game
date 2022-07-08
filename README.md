@@ -10,7 +10,7 @@
 
 ## **_Description_**
 
-Can you solve the clues and guess the hidden word? [Play Now!](<a href="https://word-challenge-game.surge.sh" target="_blank" rel="noopener noreferrer">)
+Can you solve the clues and guess the hidden word? [Play Now!](<a href="https://word-challenge-game.surge.sh" target="_blank" rel="noopener noreferrer"></a>)
 
 ---
 
