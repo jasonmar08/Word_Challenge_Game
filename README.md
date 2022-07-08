@@ -10,7 +10,7 @@
 
 ## **_Description_**
 
-Can you solve the clues and guess the hidden word?
+Can you solve the clues and guess the hidden word? [Play Now!](word-challenge-game.surge.sh)
 
 ---
 
