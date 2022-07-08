@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 header {
   margin: 50px;
   font-family: "Schoolbell", 'Courier New', Courier, monospace;

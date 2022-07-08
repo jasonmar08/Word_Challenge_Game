@@ -12,13 +12,18 @@
 <body>
   <header><h1>Word Challenge</h1></header>
   <section>
-    <br>
+    <div class="alphabet-div">
+      <ul id="alphabet-buttons"></ul>
+    </div>
+    <div class="game-input">
+    </div>
     <div class="game-content">
-      <h3 class="question">How it works:</h3>
-      <p><span class="tries-left">You will be shown a hidden word and a clue. Try to guess the word by solving the clue. Choose your guesses wisely as you have limited attempts. Good luck!</span></p>
+      <h3 class="question">Can you guess the hidden word?</h3>
+      <p>Number of tries left:  <span class="tries-left"></span></p>
+      <p>Incorrect letters: <span class="incorrect-letters"></span></p>
       <br>
     </div>
-    <button id="go-to-game"> <a href="index.html">Go to Game!</a> </button>
+    <button id="start-next">Start Game</button>
   </section>
 </body>
 </html>
