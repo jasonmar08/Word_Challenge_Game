@@ -10,6 +10,8 @@
 
 ## **_Description_**
 
+A word that tests your knowledge.
+
 Can you solve the clues and guess the hidden word? [Play Now!](https://word-challenge-game.surge.sh)
 
 ---
