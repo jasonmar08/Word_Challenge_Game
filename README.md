@@ -20,7 +20,7 @@ Can you solve the clues and guess the hidden word? [Play Now!](https://word-chal
 
 <div style= "center">
     <pre>
-        <img src="./images/instructions_page.png"  height="450" width="1000">&nbsp;&nbsp;&nbsp;<img src="./images/start_game.png" height="450">&nbsp;&nbsp;&nbsp;<img src="./images/active_game.png" height="450">&nbsp;&nbsp;&nbsp;
+        <img src="./images/instructions_page.png"  height="100%">&nbsp;&nbsp;&nbsp;<img src="./images/start_game.png" height="400">&nbsp;&nbsp;&nbsp;<img src="./images/active_game.png" height="400">&nbsp;&nbsp;&nbsp;
     </pre>
 </div>
 
