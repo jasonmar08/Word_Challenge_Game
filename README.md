@@ -16,9 +16,13 @@ Can you solve the clues and guess the hidden word? [Play Now!](https://word-chal
 
 ---
 
-## **_Technologies Used_**
+## **_Screenshots_**
 
-![Technologies Used](https://tinyurl.com/mrktcdba)
+<div style= "center">
+    <pre>
+        <img src="./images/instructions_page.png"  height="350">&nbsp;&nbsp;&nbsp;<img src="./images/start_game.png" height="350">&nbsp;&nbsp;&nbsp;<img src="./images/active_game.png" height="350">&nbsp;&nbsp;&nbsp;
+    </pre>
+</div>
 
 ---
 
@@ -28,9 +32,9 @@ Once the player starts the game, a clue will propagate in the form of either a q
 
 ---
 
-## **_Screenshots_**
+## **_Technologies Used_**
 
-![Game Image](images/gameboard.png)
+![Technologies Used](https://tinyurl.com/mrktcdba)
 
 ---
 
